@@ -26,7 +26,18 @@ http.createServer(function(req, res) {
   };
 
   request.get(options, function(err, response, body) {
+    if (err) {
+      res.writeHead(500);
+
+      res.end();
+
+      return;
+    }
+
     stats = body;
+
+    // Cache these stats for an hour before fetching fresh data.
+    setTimeout(function() { stats = [ ]; }, 1000 * 60 * 60);
 
     writeStats(req, res);
   });
