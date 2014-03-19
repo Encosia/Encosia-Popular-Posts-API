@@ -20,7 +20,7 @@ http.createServer(function(req, res) {
       sitekey: nconf.get('api-key'),
       site_id: '34742',
       type: 'pages',
-      date: 'last-90-days',
+      date: 'this-month',
       output: 'json',
       limit: 7
     }
