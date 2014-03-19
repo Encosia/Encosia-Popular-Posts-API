@@ -22,7 +22,7 @@ http.createServer(function(req, res) {
       type: 'pages',
       date: 'this-month',
       output: 'json',
-      limit: 7
+      limit: 10
     }
   };
 
