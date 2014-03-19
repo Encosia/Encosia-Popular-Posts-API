@@ -1,0 +1,9 @@
+{
+  "name": "encosia-popular-posts",
+  "varsion": "0.1.0",
+  "author": "Dave Ward <dave@encosia.com>",
+  "dependencies": {
+    "request": "*",
+    "nconf": "~0.6.9"
+  }
+}
