@@ -21,7 +21,8 @@ http.createServer(function(req, res) {
       site_id: '34742',
       type: 'pages',
       date: 'last-90-days',
-      output: 'json'
+      output: 'json',
+      limit: 7
     }
   };
 
